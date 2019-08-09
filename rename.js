@@ -1,9 +1,14 @@
 var path = require('path');
 
-var cdkit = require('cdkit')
+var cdkit = require('cdkit');
 
-var fromName = 'jslib-base';
-var toName = 'yanhajing';
+
+var fromName1 = 'jslib-base';
+var toName1 = 'quickapp-h5';
+
+var fromName2 = 'yanhaijing';
+var toName2 = 'jinwyp';
+
 
 function getFullPath (filename) {
     return path.join(__dirname, filename)
@@ -29,8 +34,12 @@ const config = [
                 },
                 replace: [
                     {
-                        from: fromName,
-                        to: toName,
+                        from: fromName1,
+                        to: toName1,
+                    },
+                    {
+                        from: fromName2,
+                        to: toName2,
                     }
                 ]
             }

@@ -3,19 +3,19 @@ var babel = require('rollup-plugin-babel');
 
 var pkg = require('../package.json');
 
-// compatible with jslib-base and @yanhaijing/jslib-base
-// @yanhaijing/jslib-base -> jslib-base
+// compatible with quickapp-h5 and @jinwyp/quickapp-h5
+// @jinwyp/quickapp-h5 -> quickapp-h5
 var name = pkg.name.split('/').pop();
-// @yanhaijing/jslib-base -> yanhaijing_jslib-base
+// @jinwyp/quickapp-h5 -> jinwyp_quickapp-h5
 // var name = pkg.name.replace('@', '').replace(/\//g, '_');
 var version = pkg.version;
 
 var banner = 
 `/*!
- * ${pkg.name} ${version} (https://github.com/yanhaijing/jslib-base)
- * API https://github.com/yanhaijing/jslib-base/blob/master/doc/api.md
- * Copyright 2017-${(new Date).getFullYear()} yanhaijing. All Rights Reserved
- * Licensed under MIT (https://github.com/yanhaijing/jslib-base/blob/master/LICENSE)
+ * ${pkg.name} ${version} (https://github.com/jinwyp/quickapp-h5)
+ * API https://github.com/jinwyp/quickapp-h5/blob/master/doc/api.md
+ * Copyright 2017-${(new Date).getFullYear()} jinwyp. All Rights Reserved
+ * Licensed under MIT (https://github.com/jinwyp/quickapp-h5/blob/master/LICENSE)
  */
 `;
 

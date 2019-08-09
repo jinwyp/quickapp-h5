@@ -2,20 +2,20 @@
 在网页中调用快应用的相关功能.
 
 
-# [jslib-base](https://github.com/yanhaijing/jslib-base)
-[![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/yanhaijing/jslib-base)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yanhaijing/jslib-base/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/yanhaijing/jslib-base.svg?branch=master)](https://travis-ci.org/yanhaijing/jslib-base)
-[![Coveralls](https://img.shields.io/coveralls/yanhaijing/jslib-base.svg)](https://coveralls.io/github/yanhaijing/jslib-base)
-[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/jslib-base)
-[![NPM downloads](http://img.shields.io/npm/dm/jslib-base.svg?style=flat-square)](http://www.npmtrends.com/jslib-base)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/yanhaijing/jslib-base.svg)](http://isitmaintained.com/project/yanhaijing/jslib-base "Percentage of issues still open")
+# [quickapp-h5](https://github.com/jinwyp/quickapp-h5)
+[![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/jinwyp/quickapp-h5)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jinwyp/quickapp-h5/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/jinwyp/quickapp-h5.svg?branch=master)](https://travis-ci.org/jinwyp/quickapp-h5)
+[![Coveralls](https://img.shields.io/coveralls/jinwyp/quickapp-h5.svg)](https://coveralls.io/github/jinwyp/quickapp-h5)
+[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/quickapp-h5)
+[![NPM downloads](http://img.shields.io/npm/dm/quickapp-h5.svg?style=flat-square)](http://www.npmtrends.com/quickapp-h5)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/jinwyp/quickapp-h5.svg)](http://isitmaintained.com/project/jinwyp/quickapp-h5 "Percentage of issues still open")
 
 English | [简体中文](./README.zh-CN.md)
 
 The best third party `JS|TS` library scaffold. By forking or cloning the repository, you can complete the basic framework for building a new library.
 
-**The library that based jslib-base can be shared to the [jsmini](https://github.com/jsmini) platform**
+**The library that based quickapp-h5 can be shared to the [jsmini](https://github.com/jsmini) platform**
 
 ## Characteristics
 
@@ -62,25 +62,25 @@ Unit tests guarantee support on the following environment:
 Using npm, download and install the code. 
 
 ```bash
-$ npm install --save jslib-base
+$ npm install --save quickapp-h5
 ```
 
 For node environment：
 
 ```js
-var base = require('jslib-base');
+var base = require('quickapp-h5');
 ```
 
 For webpack or similar environment：
 
 ```js
-import base from 'jslib-base';
+import base from 'quickapp-h5';
 ```
 
 For requirejs environment:
 
 ```js
-requirejs(['node_modules/jslib-base/dist/index.aio.js'], function (base) {
+requirejs(['node_modules/quickapp-h5/dist/index.aio.js'], function (base) {
     // do something...
 })
 ```
@@ -88,7 +88,7 @@ requirejs(['node_modules/jslib-base/dist/index.aio.js'], function (base) {
 For browser environment:
 
 ```html
-<script src="node_modules/jslib-base/dist/index.aio.js"></script>
+<script src="node_modules/quickapp-h5/dist/index.aio.js"></script>
 ```
 
 ## Documents
@@ -144,7 +144,7 @@ For renaming project, you need change `fromName` and `toName` in `rename.js`, th
 
 ## Contributors
 
-[contributors](https://github.com/yanhaijing/jslib-base/graphs/contributors)
+[contributors](https://github.com/jinwyp/quickapp-h5/graphs/contributors)
 
 ## Change Log
 [CHANGELOG.md](./CHANGELOG.md)
@@ -155,7 +155,7 @@ For renaming project, you need change `fromName` and `toName` in `rename.js`, th
 ## Current Users
 
 - [jsmini](https://github.com/jsmini)
-- [...](https://github.com/yanhaijing/jslib-base/issues/10)
+- [...](https://github.com/jinwyp/quickapp-h5/issues/10)
 
 
 ## Relative links
