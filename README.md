@@ -68,19 +68,19 @@ $ npm install --save quickapp-h5
 For node environment：
 
 ```js
-var base = require('quickapp-h5');
+var QuickApp = require('quickapp-h5');
 ```
 
 For webpack or similar environment：
 
 ```js
-import base from 'quickapp-h5';
+import QuickApp from 'quickapp-h5';
 ```
 
 For requirejs environment:
 
 ```js
-requirejs(['node_modules/quickapp-h5/dist/index.aio.js'], function (base) {
+requirejs(['node_modules/quickapp-h5/dist/index.aio.js'], function (QuickApp) {
     // do something...
 })
 ```

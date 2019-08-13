@@ -1,17 +1,17 @@
-# [jslib-base](https://github.com/yanhaijing/jslib-base)
-[![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/yanhaijing/jslib-base)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yanhaijing/jslib-base/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/yanhaijing/jslib-base.svg?branch=master)](https://travis-ci.org/yanhaijing/jslib-base)
-[![Coveralls](https://img.shields.io/coveralls/yanhaijing/jslib-base.svg)](https://coveralls.io/github/yanhaijing/jslib-base)
-[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/jslib-base)
-[![NPM downloads](http://img.shields.io/npm/dm/jslib-base.svg?style=flat-square)](http://www.npmtrends.com/jslib-base)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/yanhaijing/jslib-base.svg)](http://isitmaintained.com/project/yanhaijing/jslib-base "Percentage of issues still open")
+# [quickapp-h5](https://github.com/jinwyp/quickapp-h5)
+[![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/jinwyp/quickapp-h5)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jinwyp/quickapp-h5/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/jinwyp/quickapp-h5.svg?branch=master)](https://travis-ci.org/jinwyp/quickapp-h5)
+[![Coveralls](https://img.shields.io/coveralls/jinwyp/quickapp-h5.svg)](https://coveralls.io/github/jinwyp/quickapp-h5)
+[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/quickapp-h5)
+[![NPM downloads](http://img.shields.io/npm/dm/quickapp-h5.svg?style=flat-square)](http://www.npmtrends.com/quickapp-h5)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/jinwyp/quickapp-h5.svg)](http://isitmaintained.com/project/jinwyp/quickapp-h5 "Percentage of issues still open")
 
 [English](./README.md) | 简体中文
 
 最好用的 `JS|TS` 第三方库脚手架，fork 或 clone 本仓库，即可搭建完成一个新库的基础框架
 
-**基于jslib-base的库，都可以分享到[jsmini](https://github.com/jsmini)平台**
+**基于quickapp-h5的库，都可以分享到[jsmini](https://github.com/jsmini)平台**
 
 ## :star: 特性
 
@@ -58,25 +58,25 @@
 通过npm下载安装代码
 
 ```bash
-$ npm install --save jslib-base
+$ npm install --save quickapp-h5
 ```
 
 如果你是node环境
 
 ```js
-var base = require('jslib-base');
+var QuickApp = require('quickapp-h5');
 ```
 
 如果你是webpack等环境
 
 ```js
-import base from 'jslib-base';
+import QuickApp from 'quickapp-h5';
 ```
 
 如果你是requirejs环境
 
 ```js
-requirejs(['node_modules/jslib-base/dist/index.aio.js'], function (base) {
+requirejs(['node_modules/quickapp-h5/dist/index.aio.js'], function (QuickApp) {
     // xxx
 })
 ```
@@ -84,7 +84,7 @@ requirejs(['node_modules/jslib-base/dist/index.aio.js'], function (base) {
 如果你是浏览器环境
 
 ```html
-<script src="node_modules/jslib-base/dist/index.aio.js"></script>
+<script src="node_modules/quickapp-h5/dist/index.aio.js"></script>
 ```
 
 ## :bookmark_tabs: 文档
@@ -140,7 +140,7 @@ $ npm publish
 
 ## 贡献者列表
 
-[contributors](https://github.com/yanhaijing/jslib-base/graphs/contributors)
+[contributors](https://github.com/jinwyp/quickapp-h5/graphs/contributors)
 
 ## :gear: 更新日志
 [CHANGELOG.md](./CHANGELOG.md)
@@ -151,7 +151,7 @@ $ npm publish
 ## :bulb: 谁在使用
 
 - [jsmini](https://github.com/jsmini)
-- [...](https://github.com/yanhaijing/jslib-base/issues/10)
+- [...](https://github.com/jinwyp/quickapp-h5/issues/10)
 
 ## 相关链接
 
