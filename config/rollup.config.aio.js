@@ -20,13 +20,13 @@ module.exports = {
     },
     plugins: [
         nodeResolve({
-            main: true,
+            mainFields: ['module', 'main'],
             extensions: [common.type === 'ts' ? '.ts' : '', '.js']
         }),
         commonjs({
             include: 'node_modules/**',
         }),
         common.getCompiler(),
-        (prod && uglify())
+        (prod && uglify.uglify())
     ]
 };

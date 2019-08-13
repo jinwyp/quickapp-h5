@@ -12,27 +12,29 @@
     <div id="mocha"></div>
     <script src="../../node_modules/es5-shim/es5-shim.js"></script>
     <script src="../../node_modules/es5-shim/es5-sham.js"></script>
-    
+
     <script src="../../node_modules/mocha/mocha.js"></script>
     <script src="../../node_modules/expect.js/index.js"></script>
     <script>
         mocha.setup('bdd');
     </script>
-    <script src="../../dist/index.aio.js"></script>
+    <script type="module" src="../../dist/index.aio.js"></script>
     <script>
-        var libs = {
-            'expect.js': expect,
-            // js
-            '../src/index.js': window['quickapp-h5']
-            // ts
-            // '../src/index.ts': window['quickapp-h5']
-        };
-        var require = function(path) {
-            return libs[path];
-        }
+        // var libs = {
+        //     'expect.js': expect,
+        //     // js
+        //     '../src/index.js': window['quickapp-h5']
+        //     // ts
+        //     // '../src/index.ts': window['quickapp-h5']
+        // };
+        // var require = function(path) {
+        //     return libs[path];
+        // }
     </script>
-    <script src="../test.js"></script>
-    <script>
+    <!--<script type="module" src="../utils.js"></script>-->
+    <script type="module" src="../test.js"></script>
+    <script type="module">
+        mocha.checkLeaks();
         mocha.run();
     </script>
 </body>
