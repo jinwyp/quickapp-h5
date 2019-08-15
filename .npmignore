@@ -16,3 +16,6 @@ rename.js
 TODO.md
 tsconfig.json
 tslint.json
+.idea/**
+.nyc_output
+
