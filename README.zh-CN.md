@@ -55,7 +55,31 @@
 
 ## :rocket: 使用者指南
 
-可查看demo目录范例
+可查看 demo目录 范例, option 可参考 [快应用](https://doc.quickapp.cn/tutorial/platform/url-jump-configuration.html)
+```javascript
+
+const quickApp1 = new QuickApp();
+const option = {
+    path: '/Home',
+    params: {
+        path: 'Detail',
+        title: '测试文章',
+        url: 'http://test.wkanx.com/tmp/build/index.html',
+        id: '3163241194045440',
+        cid: 9999999,
+        type: 0,
+        template: 9999999,
+        utm_source: 'push',
+        pop: 0,
+    },
+    packageName: '',
+    confirm
+}
+quickApp1.open(option)
+
+
+```
+
 
 通过npm下载安装代码
 
@@ -66,20 +90,64 @@ $ npm install --save quickapp-h5
 如果你是node环境
 
 ```js
-var QuickApp = require('quickapp-h5');
+const QuickApp = require('quickapp-h5');
+const quickApp1 = new QuickApp();
+quickApp1.open({
+                    path: '/Home',
+                    params: {
+                        path: 'Detail',
+                        title: '测试文章',
+                        url: 'http://test.wkanx.com/tmp/build/index.html',
+                        id: '3163241194045440',
+                        cid: 9999999,
+                        type: 0,
+                        template: 9999999,
+                        utm_source: 'push',
+                        pop: 0,
+                    },
+                });
 ```
 
 如果你是webpack等环境
 
 ```js
 import QuickApp from 'quickapp-h5';
+const quickApp1 = new QuickApp();
+quickApp1.open({
+                    path: '/Home',
+                    params: {
+                        path: 'Detail',
+                        title: '测试文章',
+                        url: 'http://test.wkanx.com/tmp/build/index.html',
+                        id: '3163241194045440',
+                        cid: 9999999,
+                        type: 0,
+                        template: 9999999,
+                        utm_source: 'push',
+                        pop: 0,
+                    },
+                });
 ```
 
 如果你是requirejs环境
 
 ```js
 requirejs(['node_modules/quickapp-h5/dist/index.aio.js'], function (QuickApp) {
-    // xxx
+    const quickApp1 = new QuickApp();
+    quickApp1.open({
+                        path: '/Home',
+                        params: {
+                            path: 'Detail',
+                            title: '测试文章',
+                            url: 'http://test.wkanx.com/tmp/build/index.html',
+                            id: '3163241194045440',
+                            cid: 9999999,
+                            type: 0,
+                            template: 9999999,
+                            utm_source: 'push',
+                            pop: 0,
+                        },
+                    });
 })
 ```
 

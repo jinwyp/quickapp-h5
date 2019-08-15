@@ -65,23 +65,95 @@ Using npm, download and install the code.
 $ npm install --save quickapp-h5
 ```
 
+
+Pls check demo folder for detail,  parameter 'option' see doc: [quickapp 快应用](https://doc.quickapp.cn/tutorial/platform/url-jump-configuration.html)
+```javascript
+
+const quickApp1 = new QuickApp();
+const option = {
+    path: '/Home',
+    params: {
+        path: 'Detail',
+        title: '测试文章',
+        url: 'http://test.wkanx.com/tmp/build/index.html',
+        id: '3163241194045440',
+        cid: 9999999,
+        type: 0,
+        template: 9999999,
+        utm_source: 'push',
+        pop: 0,
+    },
+    packageName: '',
+    confirm
+}
+quickApp1.open(option)
+
+
+```
+
+
+
 For node environment：
 
 ```js
-var QuickApp = require('quickapp-h5');
+const QuickApp = require('quickapp-h5');
+const quickApp1 = new QuickApp();
+quickApp1.open({
+                    path: '/Home',
+                    params: {
+                        path: 'Detail',
+                        title: '测试文章',
+                        url: 'http://test.wkanx.com/tmp/build/index.html',
+                        id: '3163241194045440',
+                        cid: 9999999,
+                        type: 0,
+                        template: 9999999,
+                        utm_source: 'push',
+                        pop: 0,
+                    },
+                });
 ```
 
 For webpack or similar environment：
 
 ```js
 import QuickApp from 'quickapp-h5';
+const quickApp1 = new QuickApp();
+quickApp1.open({
+                    path: '/Home',
+                    params: {
+                        path: 'Detail',
+                        title: '测试文章',
+                        url: 'http://test.wkanx.com/tmp/build/index.html',
+                        id: '3163241194045440',
+                        cid: 9999999,
+                        type: 0,
+                        template: 9999999,
+                        utm_source: 'push',
+                        pop: 0,
+                    },
+                });
 ```
 
 For requirejs environment:
 
 ```js
 requirejs(['node_modules/quickapp-h5/dist/index.aio.js'], function (QuickApp) {
-    // do something...
+    const quickApp1 = new QuickApp();
+    quickApp1.open({
+                        path: '/Home',
+                        params: {
+                            path: 'Detail',
+                            title: '测试文章',
+                            url: 'http://test.wkanx.com/tmp/build/index.html',
+                            id: '3163241194045440',
+                            cid: 9999999,
+                            type: 0,
+                            template: 9999999,
+                            utm_source: 'push',
+                            pop: 0,
+                        },
+                    });
 })
 ```
 
