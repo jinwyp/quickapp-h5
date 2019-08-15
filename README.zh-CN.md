@@ -72,13 +72,41 @@ const option = {
         utm_source: 'push',
         pop: 0,
     },
-    packageName: '',
-    confirm
+    packageName: 'xxx',
+    confirm: ''
 }
 quickApp1.open(option)
 
 
 ```
+
+也可以在初始化 new QuickApp 时传入 packageName, 使用时 open 可以不传则默认使用初始化的packageName, 也可以传packageName 打开不同的快应用
+
+```javascript
+
+const quickApp1 = new QuickApp({
+    packageName: 'xxx',
+});
+const option = {
+    path: '/Home',
+    params: {
+        path: 'Detail',
+        title: '测试文章',
+        url: 'http://test.wkanx.com/tmp/build/index.html',
+        id: '3163241194045440',
+        cid: 9999999,
+        type: 0,
+        template: 9999999,
+        utm_source: 'push',
+        pop: 0,
+    },
+    packageName: 'xxx',
+    confirm: ''
+}
+quickApp1.open(option)
+
+```
+
 
 
 通过npm下载安装代码
@@ -105,6 +133,8 @@ quickApp1.open({
                         utm_source: 'push',
                         pop: 0,
                     },
+                    packageName: 'xxx',
+                    confirm: ''
                 });
 ```
 
@@ -126,6 +156,8 @@ quickApp1.open({
                         utm_source: 'push',
                         pop: 0,
                     },
+                    packageName: 'xxx',
+                    confirm: ''
                 });
 ```
 
@@ -147,6 +179,8 @@ requirejs(['node_modules/quickapp-h5/dist/index.aio.js'], function (QuickApp) {
                             utm_source: 'push',
                             pop: 0,
                         },
+                        packageName: 'xxx',
+                        confirm: ''
                     });
 })
 ```
