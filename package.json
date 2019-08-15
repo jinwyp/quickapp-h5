@@ -1,6 +1,6 @@
 {
   "name": "quickapp-h5",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "在H5页面中调用快应用功能",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
