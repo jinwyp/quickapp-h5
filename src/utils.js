@@ -70,6 +70,8 @@ function isAddQuickAppScript () {
 
 function createQuickAppScript (callback) {
 
+    callback = callback || function () {};
+
     const commonScriptUrl = 'https://statres.quickapp.cn/quickapp/js/routerinline.min.js';
     const huaweiScriptUrl = 'https://appimg.dbankcdn.com/hwmarket/files/fastapp/router.fastapp.js';
 

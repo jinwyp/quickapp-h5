@@ -108,6 +108,8 @@
   }
 
   function createQuickAppScript(callback) {
+    callback = callback || function () {};
+
     var commonScriptUrl = 'https://statres.quickapp.cn/quickapp/js/routerinline.min.js';
     var huaweiScriptUrl = 'https://appimg.dbankcdn.com/hwmarket/files/fastapp/router.fastapp.js';
 
@@ -254,6 +256,7 @@
     }, {
       key: "openDeepLink",
       value: function openDeepLink(options) {
+        // https://doc.quickapp.cn/tutorial/platform/deeplink.html
         var deepLinkUrl = 'hap://app/' + options.packageName + options.path + '?' + objectToUrlQuery(options.params);
         this.showInfo(deepLinkUrl, 'Deeplink hap 方式跳转: ');
         createIframe(deepLinkUrl);
